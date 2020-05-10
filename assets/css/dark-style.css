@@ -1,76 +1,78 @@
 body {
-  color: rgba(226, 212, 179, .85);
-  background-color: #222831;
+	color: rgba(255, 255, 255, 0.85);
+	background-color: #222831;
 }
 
 table thead {
-  color: rgba(226, 212, 179, .85);
+	color: rgba(226, 212, 179, .85);
 }
 
 table tr:nth-child(even) {
-  background-color: rgba(51, 54, 58, .35);
+	background-color: rgba(51, 54, 58, .35);
 }
 
 mark,
 ::selection {
-  background-color: #515b70;
+	background-color: #515b70;
 }
 
 .note,
 .site.name {
-  color: rgba(226, 212, 179, .85);
+	color: rgba(255, 255, 255, 0.85);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-  color: rgba(226, 212, 179, .5);
+	color: rgba(226, 212, 179, .5);
 }
 
 .note.content,
 .article.markdown-body {
-  color: rgba(255, 255, 255, .85);
+	color: rgba(255, 255, 255, .85);
 }
 
 .article.markdown-body {
-  background-image: linear-gradient(90deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(200, 255, 255, .05) 3%, rgba(0, 0, 0, 0) 3%);
+	background-image: linear-gradient(90deg, rgba(200, 255, 255, .10) 3%, rgba(0, 0, 0, 0) 3%),
+		linear-gradient(360deg, rgba(200, 255, 255, .10) 3%, rgba(0, 0, 0, 0) 3%);
+	border-right: 1px solid rgba(200, 255, 255, .01);
 }
 
 code,
 kbd,
 tt,
 samp {
-  color: hsl(23, 100%, 62%);
+	color: hsl(23, 100%, 62%);
 }
 
 pre {
-  background-color: #1f1f24;
+	background-color: #1f1f24;
 }
 
 a {
-  color: #2997ff;
+	color: #ddd;
 }
 
 .pagination ul li a {
-  color: #2997ff;
+	color: #2997ff;
 }
 
 .pagination ul li a.active {
-  background-color: #2997ff;
+	background-color: #2997ff;
 }
 
 .pagination ul li a:hover:not(.active) {
-  background-color: rgba(130, 170, 255, .5);
+	background-color: rgba(130, 170, 255, .5);
 }
 
 .tag {
-  color: rgba(226, 212, 179, .85);
+	color: rgba(226, 212, 179, .85);
 }
 
 .category {
-  color: rgba(0, 0, 0, .85);
-  background-color: rgba(226, 212, 179, .85);
+	color: #f4f4f4;
+	background-color: rgba(56, 56, 56, 0.85);
 }
 
 strong,
@@ -81,21 +83,20 @@ b,
 .article.markdown-body h4,
 .article.markdown-body h5,
 .article.markdown-body h6 {
-  color: rgba(226, 212, 179, .85);
+	color: #fff;
 }
 
 .note.list .item,
 .article-container {
-  background-color: #393e46;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
+	background-color: #4666ff;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 500px) {
-
-  .note.list .item,
-  .article-container {
-    box-shadow: none;
-  }
+	.note.list .item,
+	.article-container {
+		box-shadow: none;
+	}
 }
 
 /* border color */
@@ -104,31 +105,31 @@ pre,
 .article.markdown-body table td,
 .article.markdown-body table th,
 .article.markdown-body .lntable {
-  border-color: rgba(226, 212, 179, .05);
+	border-color: rgba(226, 212, 179, .05);
 }
 
 .site.header,
 .article.markdown-body h1,
 .article.markdown-body h2 {
-  border-bottom-color: rgba(226, 212, 179, .15);
+	border-bottom-color: rgba(226, 212, 179, .15);
 }
 
 .article.markdown-body blockquote {
-  border-left-color: #c9ced6;
-  background-color: #292e36;
+	border-left-color: #c9ced6;
+	background-color: #292e36;
 }
 
 .article.license {
-  background-color: #31373f;
-  color: rgba(226, 212, 179, .85);
-  border-color: rgba(226, 212, 179, .05);
+	background-color: #31373f;
+	color: rgba(226, 212, 179, .85);
+	border-color: rgba(226, 212, 179, .05);
 }
 
 .article.discussion {
-  border-top-color: rgba(226, 212, 179, .05);
-  border-bottom-color: rgba(226, 212, 179, .05);
+	border-top-color: rgba(226, 212, 179, .05);
+	border-bottom-color: rgba(226, 212, 179, .05);
 }
 
-.article.markdown-body .lntable tr>:first-child {
-  border-right-color: rgba(226, 212, 179, .05);
+.article.markdown-body .lntable tr > :first-child {
+	border-right-color: rgba(226, 212, 179, .05);
 }
