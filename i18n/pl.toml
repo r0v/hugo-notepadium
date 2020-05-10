@@ -3,10 +3,12 @@ other = " • edytowano %s"
 
 [readingTime]
 one = " • 1 min aby przeczytać"
+few = " • {{ .Count }} minuty aby przeczytać"
+many = " • {{ .Count }} minut aby przeczytać"
 other = " • {{ .Count }} minut aby przeczytać"
 
 [more]
-other = "zobacz więcej"
+other = "Zobacz więcej"
 
 [Categories]
 other = "Kategorie"

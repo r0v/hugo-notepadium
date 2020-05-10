@@ -9,10 +9,16 @@
     {{- end -}}
     {{- if .Date -}}
         {{- $dateFormat := .Date.Format $dateFormat -}}
-        <p class="article date">{{- $dateFormat -}}
-            {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
-                <span class="lastmod">{{- printf (T "edited") $lastmodFormat -}}</span>
-            {{- end -}}
+        <p class="article date">
+            
+            <time class="post-date" datetime="{{ $dateFormat }}">
+                
+                {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Year }} 
+                {{- if and ($lastmod.After .Date) (ne $lastmodFormat $dateFormat) -}}
+                {{ $lastmodParsed := printf "%d %s %d" (.Lastmod.Day) (index $.Site.Data.months (printf "%d" .Lastmod.Month)) (.Lastmod.Year)}}
+                <span class="lastmod">{{ printf (T "edited") $lastmodParsed }}</span>
+                {{- end -}}                
+            </time>
             {{- if or (eq .Params.readingTime true) (and (not (eq .Params.readingTime false)) (eq site.Params.readingTime true)) -}}
             <span class="reading-time">{{ T "readingTime" .ReadingTime }}</span>
             {{- end -}}
