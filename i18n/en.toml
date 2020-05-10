@@ -5,6 +5,12 @@ other = " • edited %s"
 one = " • One minute to read"
 other = " • {{ .Count }} minutes to read"
 
+[firstPost]
+other = "First post"
+
+[lastPost]
+other = "No more posts"
+
 [more]
 other = "more"
 
