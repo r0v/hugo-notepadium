@@ -7,6 +7,12 @@ few = " • {{ .Count }} minuty aby przeczytać"
 many = " • {{ .Count }} minut aby przeczytać"
 other = " • {{ .Count }} minut aby przeczytać"
 
+[firstPost]
+other = "Pierwszy post"
+
+[lastPost]
+other = "Brak nowszych postów"
+
 [more]
 other = "Zobacz więcej"
 
