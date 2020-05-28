@@ -5,9 +5,9 @@
 <body>
     <div class="base-body">
         {{- partial "header.html" . -}}
-        <div id="content">
+        <main id="content">
             {{- block "main" . -}}{{- end -}}
-        </div>
+        </main>
         {{- partial "footer.html" . -}}
     </div>
 </body>
