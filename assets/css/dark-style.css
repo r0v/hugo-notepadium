@@ -18,14 +18,14 @@ mark,
 
 .note,
 .site.name {
-	color: #fdfdfd;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-	color: #e3e3e3;
+	color: #ddd;
 }
 
 .note.content,
@@ -67,7 +67,7 @@ a {
 }
 
 .tag {
-	color: #e3e3e3;
+	color: rgba(226, 212, 179, .85);
 }
 
 .category {
@@ -88,7 +88,7 @@ b,
 
 .note.list .item,
 .article-container {
-	background-color: #0850ff;
+	background-color: #4666ff;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
@@ -96,6 +96,10 @@ b,
 	.note.list .item,
 	.article-container {
 		box-shadow: none;
+	}
+
+	.site.slogan {
+		display: none;
 	}
 }
 
