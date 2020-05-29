@@ -18,14 +18,14 @@ mark,
 
 .note,
 .site.name {
-	color: rgba(255, 255, 255, 0.85);
+	color: #fdfdfd;
 }
 
 .site.slogan .title,
 .note.date,
 .article.date,
 .footer {
-	color: rgba(226, 212, 179, .5);
+	color: #e3e3e3;
 }
 
 .note.content,
@@ -67,7 +67,7 @@ a {
 }
 
 .tag {
-	color: rgba(226, 212, 179, .85);
+	color: #e3e3e3;
 }
 
 .category {
@@ -88,7 +88,7 @@ b,
 
 .note.list .item,
 .article-container {
-	background-color: #4666ff;
+	background-color: #0850ff;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, .2);
 }
 
