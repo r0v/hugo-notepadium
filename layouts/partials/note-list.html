@@ -3,6 +3,7 @@
 {{- if gt $paginator.TotalPages 0 -}}
 {{- $dateFormat := site.Params.dateFormat -}}
 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
+{{- $alternateFormat := "2006-01-02T15:04:05Z07:00" -}}
 <ul class="note list">
     {{- range $paginator.Pages -}}
     <li class="item"><a class="note" href="{{- replace .RelPermalink "#" "%23" -}}">
@@ -11,7 +12,7 @@
                 {{- $dateFormat := .Date.Format $dateFormat -}}
                 <p class="note date">
 
-                    <time class="post-date" datetime="{{ $dateFormat }}">
+                    <time class="post-date" datetime="{{ .Date.Format $alternateFormat }}">
                         {{ .Date.Day }} {{ index site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Year }} 
                     </time>
 
